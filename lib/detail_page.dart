@@ -1,4 +1,3 @@
-// pages/dictionary_detail_page.dart
 import 'package:englishdec/services_page.dart';
 import 'package:flutter/material.dart';
 
