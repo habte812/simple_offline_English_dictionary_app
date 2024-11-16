@@ -1,4 +1,4 @@
-# englishdec
+# englishdic
 
 A new Flutter project.
 
