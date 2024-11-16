@@ -21,21 +21,16 @@ class _ScreenPageState extends State<ScreenPage> {
     _loadDictionary();
   }
 
-  // pages/dictionary_home_page.dart
   Future<void> _loadDictionary() async {
-    // Load the dictionary data using DictionaryService
     _dictionaryEntries = await DictionaryService.loadDictionary();
 
-    // Update the filtered list with the full list initially
     setState(() {
       _filteredEntries = _dictionaryEntries;
     });
   }
 
-// pages/dictionary_home_page.dart
   void _filterEntries(String query) {
     setState(() {
-      // Filter the dictionary entries that contain the query in their word
       _filteredEntries = _dictionaryEntries.where((entry) {
         return entry.word.toLowerCase().contains(query.toLowerCase());
       }).toList();
