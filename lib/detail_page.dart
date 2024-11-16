@@ -5,7 +5,6 @@ class DictionaryDetailPage extends StatelessWidget {
   final DictionaryEntry entry;
 
   DictionaryDetailPage({required this.entry});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
